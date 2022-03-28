@@ -1,96 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../Projeto-formulario/assets/styles/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-        </header>
-        <section id="form">
-            <div class="title">
-                <h1>Cadastro</h1>
-            </div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Projeto-formulario/assets/styles/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
 
-            <div class="form-cad">
-                <div class="login-info">
-                    <div class="title-cad">
+    </header>
+    <main class="container">
+        <section class="box-form">
+            <div class="box-content">
+                <div class="info-login">
+                    <div class="title-form">
                         <h1>Dados de login</h1>
                     </div>
-                    
-                    <form action=""  for="formulario">
-                        <div class="form">
-                            <div class="label-first">
+                    <div class="form-action-login">
+                        <form action="" method="post" for="form">
+                            <div class="form-top">
                                 <label>
-                                    CPF <br><input type="text" id="formulario" >
-                                  </label>
+                                    CPF <br><input type="text" name="cpf" placeholder="_________-__" id="form">
+                                </label>
                             </div>
-                            <div class="label-end">
-                                <label class="spacement"> 
-                                    E-mail <br> <input type="text" id="formulario" class="">
-                                 </label>
-                                 <label class="spacement">
-                                     Confirmar E-mail <br><input type="text" id="formulario" >
-                                 </label>
-                                 <label class="spacement">
-                                     Senha <br> <input type="password" id="formulario" class="space " >
-                                 </label>
-                                 <label class="spacement">
-                                    Confirmar senha <br><input type="password" id="formulario" class="space" >
-                                 </label>          
-                            </div>
-                                             
+                           <div class="form-bottom">
+                                <label>
+                                    E-mail <br> <input type="email" name="email" id="form">
+                                </label>
+                                <label>
+                                    Confirma E-mail <br><input type="email" name="confmail" id="form">
+                                </label>
+                                <label>
+                                    Cofirma E-mail <br><input type="email" name="confemail" id="form">
+                                </label>
+                                <label>
+                                    Senha <br><input type="password" name="pass" minlength="8" maxlength="20" placeholder="*********" id="formwidthpass">
+                                </label>
+                                <label>
+                                    Confirma senha <br><input type="password" name="confpass" minlength="8" maxlength="20" placeholder="*********" id="formwidthpass">
+                                </label>
+                                
+                           </div>
+                        
+                    </div>
+                </div>
+                <div class="personal-info">
+                    <div class="title-form">
+                        <h1>Dados Pessoais</h1>
+                    </div>
+                    <div class="form-action-personal">
+                        <div class="box-personal-top">
+                        <label class="marginright">
+                            Nome <br><input type="text" name="nome" id="form">
+                        </label>
+                        <label  class="marginleft">
+                            Sobrenome <br><input type="text" name="sobrenome" id="form">
+                        </label>
+                        
                         </div>
-                       
-                </div>   
-                        <div class="registration-data">
-                            <div class="title-cad">
-                                <h1>Dados pessoais</h1>
-                            </div>
-                            <label>
-                               Nome <input type="text" id="formulario">
+                        <div class="box-personal-mid">
+                            <label class="marginright">
+                                Nascimento <br><input type="text" name="Nascimento"  id="form">
                             </label>
-                            <label>
-                                Sobrenome <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Sexo <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Nascimento <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Estado <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Cidade <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Endereço <input type="text" id="formulario">
-                             </label>
-                             <label>
-                                Complemento <input type="text" id="formulario">
-                             </label>
-                            <label>
-                                Graduação: 
-                                <select name="select">
-                                    <option value="1"></option>
-                                    <option value="1">curso1</option>
-                                    <option value="1">curso2</option>
-                                    <option value="1">curso3</option>
-                                    <option value="1">curso4</option>
-                                    <option value="1">curso5</option>
-        
-                                </select>
+                            <label class="marginleft marginright">
+                                RG <br><input type="text" name="RG" id="form">
+                            </label>
+                            <label class="marginleft">
+                                Sexo <br><input type="text" name="Sexo" id="form">
                             </label>
                         </div>
-                    </form>
-  
+                        
+                        <div class="box-personal-bottom"></div>
+                        <label>
+                            Estado <br><input type="text" name="estado" id="form">
+                        </label>
+                        <label>
+                            Cidade <br><input type="text" name="cidade" id="form">
+                        </label>
+                        <label>
+                            Cep <br><input type="text" name="cep" id="form">
+                        </label>
+                </div>
+                    </div>
+                </div>
+            </form>
             </div>
+            
         </section>
-        <footer>
-
-        </footer>
-    </body>
+    </main>
+    
+</body>
 </html>

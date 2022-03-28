@@ -3,62 +3,112 @@
     margin:0;
     box-sizing: border-box;
     font-family:serif;
+   
 }
 body{
     height:100vh;
-    width: 100vw;
-}
-
-section {
-    color:black;
-
-}
-.form-cad{
-    width:auto;
-    height: 600px;
-    margin:20px 10% 20px 10%;
-}
-.title-cad{
-    background-color: #f5f5f5;
-    width:auto;
-    padding:5px;
-    border-bottom: 1px solid silver;
-}
-.title-cad h1{
-    font-weight: normal;
-    font-size: 18px;
-}
-.login-info{
-    border:1px solid silver;
-    margin-bottom: 20px;
-    height: 180px;
-}
-#formulario{
-    margin-top: 10px;
-}
-.form{
-    padding:5px 10px 5px 10px;
     display: flex;
+    align-items: center;
+}
+ .container{
     width:100%;
-    flex-direction: column;
-}
-.label-end{
+    height:auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-form{
+    width:60%;
+    height:90%;
+  
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    height: 70px;
-    align-items: flex-end;
+    height:100%;
+    
+}
+.info-login{
+    flex:1;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    
+}
+.title-form{
+    height:40px;
+    background-color: #97B3C4;
+    border-bottom: 1px solid rgba(0, 0, 0);
+}
+.personal-info{
+    flex:3;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top:20px;
+}
+.form-action-login{
+    padding:10px;
+
+}
+.form-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.form-bottom label{
+    margin:0 10px 0 0;
+}
+#form{
+    padding:5px 20px 5px 20px;
+    color:black;
+}
+.form-bottom input{
+    outline:0;
+    border-width: 1px;
+}
+.form-bottom input:focus{
+   
+
+ box-shadow: 0px 0px 3px  blue;
+ background-color: white;
+}
+
+#formwidthpass{
+    width:102px;
+    padding:5px 10px 5px 10px;
+}
+.form-action-personal{
+    padding:10px;
+    width:100%;
     flex-wrap: wrap;
 }
-.spacement{
-    margin-right: 50px;
+.box-personal-top{
+    display: flex;
+    justify-content: space-around;
+
 }
-.registration-data{
-    border:1px solid silver;
-    height:400px;
+.box-personal-top label{
+ width:100%;
 }
-#formulario{
-    padding:5px 20px 5px 20px;
+.box-personal-top #form{
+   width: 100%;
 }
-.space{
-    width:100px;
+.box-personal-mid{
+    display: flex;
+    justify-content: space-around;
+}
+.box-personal-mid label{
+ width: 40%;
+}
+.box-personal-mid #form{
+    width:100%;
+}
+ .marginright{
+    margin-right: 10px;
+}
+  .marginleft{
+    margin-left: 10px;
+}
+.box-personal-bottom{
+    display: flex;
+    flex-wrap: wrap;
 }
