@@ -152,15 +152,21 @@ body{
 .row5 #form{
     width: 100%;
 }
-@media (max-width:751px){
+@media (max-width:769px){
     body{
         display: block;
     }
     .container{
         margin-top:20px;
     }
+    .box-form{
+        width: 80%;
+    }
 }
 @media (max-width:425px){
+    .box-form{
+        width: 90%;
+    }
     .form-top label,
     .form-bottom label{
         margin:0;
