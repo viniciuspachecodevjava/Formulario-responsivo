@@ -6,14 +6,13 @@
     font-weight: normal;
 }
 body{
-   height:660px;
+    height:100vh;
     display: flex;
     align-items: center;
    
 }
  .container{
     width:100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +59,7 @@ body{
 .form-bottom label{
     margin:0 10px 0 0;
 }
-#form{
+#form,select{
     padding:5px 20px 5px 20px;
     color:black;
 }
@@ -84,25 +83,28 @@ body{
     width:100%;
     flex-wrap: wrap;
 }
-.box-personal-top{
+.form-action-personal label {
+    margin-bottom: 10px;
+}
+.row1{
     display: flex;
     justify-content: space-around;
 
 }
-.box-personal-top label{
+.row1 label{
  width:100%;
 }
-.box-personal-top #form{
+.row1 #form{
    width: 100%;
 }
-.box-personal-mid{
+.row2{
     display: flex;
     justify-content: space-around;
 }
-.box-personal-mid label{
+.row2 label{
  width: 40%;
 }
-.box-personal-mid #form{
+.row2 #form{
     width:100%;
 }
  .marginright{
@@ -111,7 +113,80 @@ body{
   .marginleft{
     margin-left: 10px;
 }
-.box-personal-bottom{
+.row3{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.row3 label {
+    width: 100%;
+}
+.row3 #form{
+    width:100%;
+}
+.row3 .ender{
+    flex:3;
+}
+.row3 .cep{
+    flex:1;
+}
+.row3 .number{
+    flex:1;
+}
+.row4{
+    display: flex;
+    justify-content: space-around;
+}
+.row4 label{
+    width: 100%;
+}
+.row4 #form{
+    width: 100%;
+}
+.row5{
+    display: flex;
+    justify-content: space-around;
+}
+.row5 label,select{
+    width: 100%;
+}
+.row5 #form{
+    width: 100%;
+}
+@media (max-width:751px){
+    body{
+        display: block;
+    }
+    .container{
+        margin-top:20px;
+    }
+}
+@media (max-width:425px){
+    .form-top label,
+    .form-bottom label{
+        margin:0;
+        width:100%;
+    }
+    .form-top #form,
+    .form-bottom #form{
+     width:100%;
+    }
+    .row1,
+    .row2,
+    .row3,
+    .row4,
+    .row5{
+        flex-direction: column;
+    }
+    .marginleft{
+        margin-left: 0px;
+    }
+    .marginright{
+        margin-right:0px;
+    }
+    .row2 label{
+        width: 100%;
+       }
+   body{
+       display:block;
+   }
 }
