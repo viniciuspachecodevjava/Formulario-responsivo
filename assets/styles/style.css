@@ -6,9 +6,10 @@
     font-weight: normal;
 }
 body{
-    height:100vh;
+   height:650px;
     display: flex;
     align-items: center;
+   
 }
  .container{
     width:100%;
