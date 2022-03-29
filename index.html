@@ -22,7 +22,7 @@
                         <form action="" method="post" for="form">
                             <div class="form-top">
                                 <label>
-                                    CPF <br><input type="text" name="cpf" placeholder="_________-__" id="form">
+                                    CPF <br><input type="text" name="cpf"  placeholder="_________-__" id="form">
                                 </label>
                             </div>
                            <div class="form-bottom">
@@ -31,9 +31,6 @@
                                 </label>
                                 <label>
                                     Confirma E-mail <br><input type="email" name="confmail" id="form">
-                                </label>
-                                <label>
-                                    Cofirma E-mail <br><input type="email" name="confemail" id="form">
                                 </label>
                                 <label>
                                     Senha <br><input type="password" name="pass" minlength="8" maxlength="20" placeholder="*********" id="formwidthpass">
@@ -62,13 +59,19 @@
                         </div>
                         <div class="row2">
                             <label class="marginright">
-                                Nascimento <br><input type="text" name="Nascimento"  id="form">
+                                Nascimento <br><input type="date" name="Nascimento"  id="form">
                             </label>
                             <label class="marginleft marginright">
-                                RG <br><input type="text" name="RG" id="form">
+                                RG <br><input type="text" name="RG" placeholder="_.___.___" id="form" >
                             </label>
                             <label class="marginleft">
-                                Sexo <br><input type="text" name="Sexo" id="form">
+                                Sexo <br>
+                                <select name="sexo">
+                                    <option value="">Selecione</option>
+                                    <option value="">Masculino</option>
+                                    <option value="">Feminino</option>
+                                    <option value="">Outro</option>
+                                </select>
                             </label>
                         </div>
                         
@@ -80,7 +83,7 @@
                             Endereço <br><input type="text" name="endereco" id="form">
                         </label>
                         <label class="number marginleft">
-                            Nº <br><input type="text" name="number" id="form">
+                            Nº <br><input type="number" name="number" id="form">
                         </label>
                         </div>
 
@@ -92,19 +95,26 @@
                                 Complemento <br><input type="text" name="Complemento" id="form">
                             </label>
                             <label class=" marginleft">
-                                Cidade <br><input type="text" name="Cidade" id="form">
-                            </label>
-                        </div>
-                        <div class="row5">
-                            <label class=" marginright">
                                 Estado <br>
-                                <select name="estados">
-                                    <option value=""></option>
+                                <select name="estado">
+                                    <option value="">Selecione</option>
                                     <option value="">Estado1</option>
                                     <option value="">Estado2</option>
                                     <option value="">Estado3</option>
                                     <option value="">Estado4</option>
 
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row5">
+                            <label class=" marginright">
+                                Cidade <br>
+                                <select name="cidade">
+                                    <option value="">Selecione</option>
+                                    <option value="">Cidade1</option>
+                                    <option value="">Cidade2</option>
+                                    <option value="">Cidade3</option>
+                                    <option value="">Cidade4</option>
                                 </select>
                             </label>
                             <label class=" marginleft marginright" >
@@ -113,6 +123,11 @@
                             <label class=" marginleft">
                                 DDD+ Celular <br><input type="text" name="Cidade" id="form">
                             </label>
+                    </div>
+                    <div class="div-buttom">
+                        <div class="buttom">
+                            <a href=""> <span>Enviar</span> </a>
+                        </div>
                     </div>
                 </div>
             </form>
